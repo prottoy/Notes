@@ -1,0 +1,10 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'Notes' do
+
+pod 'KMPlaceholderTextView', '~> 1.1.1'
+pod 'Alamofire', '~> 3.0'
+pod 'SwiftyJSON'
+end
+
