@@ -84,12 +84,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-Notes/Alamofire.framework"
-  install_framework "Pods-Notes/KMPlaceholderTextView.framework"
-  install_framework "Pods-Notes/SwiftyJSON.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/KMPlaceholderTextView/KMPlaceholderTextView.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Realm/Realm.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/RealmSwift/RealmSwift.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/SwiftyJSON/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-Notes/Alamofire.framework"
-  install_framework "Pods-Notes/KMPlaceholderTextView.framework"
-  install_framework "Pods-Notes/SwiftyJSON.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/KMPlaceholderTextView/KMPlaceholderTextView.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Realm/Realm.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/RealmSwift/RealmSwift.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/SwiftyJSON/SwiftyJSON.framework"
 fi

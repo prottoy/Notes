@@ -21,7 +21,7 @@ class NotesTableViewController: UITableViewController {
         
         enableRowAutosizing()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "retrieveNotes", name: "newnotecreated", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(NotesTableViewController.retrieveNotes), name: "newnotecreated", object: nil)
         retrieveNotes()
     }
     
@@ -60,9 +60,20 @@ extension NotesTableViewController{
         performSegueWithIdentifier("Show Detail", sender: self)
     }
     
-//    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//        return 80.0
-//    }
+    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]?{
+        let delete = UITableViewRowAction(style: .Normal, title: "Delete") { action, index in
+            print("more button tapped")
+        }
+        delete.backgroundColor = UIColor.redColor()
+        
+        let edit = UITableViewRowAction(style: .Normal, title: "Edit") { action, index in
+            print("favorite button tapped")
+        }
+        edit.backgroundColor = UIColor.orangeColor()
+        
+        
+        return [delete, edit]
+    }
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == UITableViewCellEditingStyle.Delete {
@@ -81,7 +92,8 @@ extension NotesTableViewController{
 // MARK: - Web service related codes
 extension NotesTableViewController{
     func retrieveNotes(){
-        Alamofire.request(.GET, "http://localhost:8888/notes/").validate().responseJSON { response in
+        
+        Alamofire.request(.GET, "https://notes-prottoys.rhcloud.com/").validate().responseJSON { response in
             switch response.result {
             case .Success:
                 if let value = response.result.value {
@@ -113,7 +125,7 @@ extension NotesTableViewController{
     }
     
     func deleteNote(noteId:String){
-        Alamofire.request(.POST, "http://localhost:8888/notes/", parameters: ["delete":noteId]).validate().responseJSON { response in
+        Alamofire.request(.POST, "https://notes-prottoys.rhcloud.com/", parameters: ["delete":noteId]).validate().responseJSON { response in
             switch response.result {
             case .Success:
                 if let value = response.result.value {

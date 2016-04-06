@@ -1,16 +1,26 @@
 PODS:
   - Alamofire (3.1.4)
   - KMPlaceholderTextView (1.1.1)
+  - Realm (0.98.4):
+    - Realm/Headers (= 0.98.4)
+  - Realm/Headers (0.98.4)
+  - RealmSwift (0.98.4):
+    - Realm (= 0.98.4)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
   - KMPlaceholderTextView (~> 1.1.1)
+  - RealmSwift
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: fbc829692f351fa1d8a31dd75fd7f7f56fea31fb
   KMPlaceholderTextView: 686edec818f5727728eaf8c2e9e70177692d3d53
+  Realm: 7745674cb1b7cb2a84a655bfd420b86efdaad36e
+  RealmSwift: 18742f4f13f98117aeec53b92058918ac93bf38f
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 63766be9a2a1d5b61de76ce12283004a75d15e12
+
+COCOAPODS: 1.0.0.beta.5

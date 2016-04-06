@@ -9,14 +9,11 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import Realm
 
 class DetailViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate{
-
-
     @IBOutlet weak var titleTextView: UITextView!
     @IBOutlet weak var noteDetailTextView: UITextView!
-    
-
     
     var selectedNote:Note!
     
@@ -75,11 +72,11 @@ extension DetailViewController{
 // MARK: - Button type in Navigation Controller
 extension DetailViewController{
     func showSaveButtonInNavigationItem(){
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Save, target: self, action:"saveNote");
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Save, target: self, action:#selector(DetailViewController.saveNote));
     }
     
     func showEditButtonInNavigationItem(){
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Edit, target: self, action:"startEditingNote:");
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Edit, target: self, action:#selector(DetailViewController.startEditingNote(_:)));
     }
 }
 
@@ -97,7 +94,7 @@ extension DetailViewController{
 // MARK: - Network Call
 extension DetailViewController{
     func saveNotes(noteTitle:String, noteDescription:String){
-        Alamofire.request(.POST, "http://localhost:8888/notes/", parameters: ["title":noteTitle, "description": noteDescription]).validate().responseJSON { response in
+        Alamofire.request(.POST, "https://notes-prottoys.rhcloud.com/", parameters: ["title":noteTitle, "description": noteDescription]).validate().responseJSON { response in
             switch response.result {
             case .Success:
                 if let value = response.result.value {
@@ -116,7 +113,7 @@ extension DetailViewController{
     
     
     func updateNotes(noteId:String, noteTitle:String, noteDescription:String){
-        Alamofire.request(.PUT, "http://localhost:8888/notes/", parameters: ["id":noteId, "title":noteTitle, "description": noteDescription]).validate().responseJSON { response in
+        Alamofire.request(.PUT, "https://notes-prottoys.rhcloud.com/", parameters: ["id":noteId, "title":noteTitle, "description": noteDescription]).validate().responseJSON { response in
             switch response.result {
             case .Success:
                 if let value = response.result.value {

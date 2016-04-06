@@ -7,23 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BAE2BC47B4A93C731D6D2185 /* Pods_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA56D5A397C6C2752F354116 /* Pods_Notes.framework */; };
+		7BDA1E445EFB55B6280F9DB8 /* Pods_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 975F4EB92C275300CEB1E03E /* Pods_Notes.framework */; };
 		D55FCF891C3CD56A00E73CE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55FCF881C3CD56A00E73CE4 /* AppDelegate.swift */; };
 		D55FCF8E1C3CD56A00E73CE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55FCF8C1C3CD56A00E73CE4 /* Main.storyboard */; };
 		D55FCF901C3CD56A00E73CE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55FCF8F1C3CD56A00E73CE4 /* Assets.xcassets */; };
 		D55FCF931C3CD56A00E73CE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55FCF911C3CD56A00E73CE4 /* LaunchScreen.storyboard */; };
 		D5D64EF01C3E38CB00333F9C /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D64EEF1C3E38CB00333F9C /* NotesTableViewController.swift */; };
-		D5D64EF21C3E393300333F9C /* TherapLogin1-300.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5D64EF11C3E393300333F9C /* TherapLogin1-300.jpg */; };
 		D5D64EF41C3E3C8C00333F9C /* NotesListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D64EF31C3E3C8C00333F9C /* NotesListCellTableViewCell.swift */; };
 		D5D64EF61C3E442100333F9C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D64EF51C3E442100333F9C /* DetailViewController.swift */; };
-		D5D64EF81C3E47AE00333F9C /* therap_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5D64EF71C3E47AE00333F9C /* therap_logo.jpg */; };
 		D5D64EFA1C3E749700333F9C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D64EF91C3E749700333F9C /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2CC0C159FC30CFC74921090C /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
-		5B3193DA322F592034A00C9B /* Pods-Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.debug.xcconfig"; sourceTree = "<group>"; };
-		CA56D5A397C6C2752F354116 /* Pods_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		975F4EB92C275300CEB1E03E /* Pods_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B682C54A056EB7C0EB03E805 /* Pods-Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.debug.xcconfig"; sourceTree = "<group>"; };
+		C5BC8D85C70D3F2A9FE8D80C /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
 		D55FCF851C3CD56A00E73CE4 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55FCF881C3CD56A00E73CE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D55FCF8D1C3CD56A00E73CE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,10 +29,8 @@
 		D55FCF921C3CD56A00E73CE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D55FCF941C3CD56A00E73CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5D64EEF1C3E38CB00333F9C /* NotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
-		D5D64EF11C3E393300333F9C /* TherapLogin1-300.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "TherapLogin1-300.jpg"; sourceTree = "<group>"; };
 		D5D64EF31C3E3C8C00333F9C /* NotesListCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesListCellTableViewCell.swift; sourceTree = "<group>"; };
 		D5D64EF51C3E442100333F9C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		D5D64EF71C3E47AE00333F9C /* therap_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = therap_logo.jpg; sourceTree = "<group>"; };
 		D5D64EF91C3E749700333F9C /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,19 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAE2BC47B4A93C731D6D2185 /* Pods_Notes.framework in Frameworks */,
+				7BDA1E445EFB55B6280F9DB8 /* Pods_Notes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B5922007AF32E32389A0C50 /* Frameworks */ = {
+		04CBAF961896B7D355623C30 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CA56D5A397C6C2752F354116 /* Pods_Notes.framework */,
+				975F4EB92C275300CEB1E03E /* Pods_Notes.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		062327295D3B22538CB9F39D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B682C54A056EB7C0EB03E805 /* Pods-Notes.debug.xcconfig */,
+				C5BC8D85C70D3F2A9FE8D80C /* Pods-Notes.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		D518F3DE1C421BF8009FC0EF /* Models */ = {
@@ -91,8 +96,8 @@
 			children = (
 				D55FCF871C3CD56A00E73CE4 /* Notes */,
 				D55FCF861C3CD56A00E73CE4 /* Products */,
-				E264978E4F523FA621AF900B /* Pods */,
-				2B5922007AF32E32389A0C50 /* Frameworks */,
+				062327295D3B22538CB9F39D /* Pods */,
+				04CBAF961896B7D355623C30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,19 +117,8 @@
 				D518F3DF1C421C0A009FC0EF /* ViewControllers */,
 				D55FCF8F1C3CD56A00E73CE4 /* Assets.xcassets */,
 				D55FCF941C3CD56A00E73CE4 /* Info.plist */,
-				D5D64EF71C3E47AE00333F9C /* therap_logo.jpg */,
-				D5D64EF11C3E393300333F9C /* TherapLogin1-300.jpg */,
 			);
 			path = Notes;
-			sourceTree = "<group>";
-		};
-		E264978E4F523FA621AF900B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5B3193DA322F592034A00C9B /* Pods-Notes.debug.xcconfig */,
-				2CC0C159FC30CFC74921090C /* Pods-Notes.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,12 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D55FCF971C3CD56A00E73CE4 /* Build configuration list for PBXNativeTarget "Notes" */;
 			buildPhases = (
-				95C4009CF98ADE5B612E0F69 /* Check Pods Manifest.lock */,
+				91EF1E471BD7C1204EA483C0 /* 📦 Check Pods Manifest.lock */,
 				D55FCF811C3CD56A00E73CE4 /* Sources */,
 				D55FCF821C3CD56A00E73CE4 /* Frameworks */,
 				D55FCF831C3CD56A00E73CE4 /* Resources */,
-				FB576A1A3AB42735711F83BC /* Embed Pods Frameworks */,
-				26DD254EED6ED4EBD14F51A6 /* Copy Pods Resources */,
+				646C8C5E2EBD2E1DDA3659EE /* 📦 Embed Pods Frameworks */,
+				88F563E3C360078C0AFD26C7 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,8 +183,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D55FCF931C3CD56A00E73CE4 /* LaunchScreen.storyboard in Resources */,
-				D5D64EF81C3E47AE00333F9C /* therap_logo.jpg in Resources */,
-				D5D64EF21C3E393300333F9C /* TherapLogin1-300.jpg in Resources */,
 				D55FCF901C3CD56A00E73CE4 /* Assets.xcassets in Resources */,
 				D55FCF8E1C3CD56A00E73CE4 /* Main.storyboard in Resources */,
 			);
@@ -199,14 +191,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		26DD254EED6ED4EBD14F51A6 /* Copy Pods Resources */ = {
+		646C8C5E2EBD2E1DDA3659EE /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Notes/Pods-Notes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88F563E3C360078C0AFD26C7 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,34 +221,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Notes/Pods-Notes-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		95C4009CF98ADE5B612E0F69 /* Check Pods Manifest.lock */ = {
+		91EF1E471BD7C1204EA483C0 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FB576A1A3AB42735711F83BC /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Notes/Pods-Notes-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -366,9 +358,10 @@
 		};
 		D55FCF981C3CD56A00E73CE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B3193DA322F592034A00C9B /* Pods-Notes.debug.xcconfig */;
+			baseConfigurationReference = B682C54A056EB7C0EB03E805 /* Pods-Notes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = Notes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.therapservices.Notes;
@@ -378,9 +371,10 @@
 		};
 		D55FCF991C3CD56A00E73CE4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CC0C159FC30CFC74921090C /* Pods-Notes.release.xcconfig */;
+			baseConfigurationReference = C5BC8D85C70D3F2A9FE8D80C /* Pods-Notes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = Notes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.therapservices.Notes;
